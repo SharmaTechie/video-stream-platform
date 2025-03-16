@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: #f0f2f5;
+  color: #1a1a1a;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.video-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+#videoPlayer {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* Custom video player controls */
+video::-webkit-media-controls {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 8px 8px;
+}
+
+video::-webkit-media-controls-panel {
+  padding: 0 12px;
+}
+
+.app-footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+} 
